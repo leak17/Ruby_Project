@@ -1,0 +1,2 @@
+class FunctionalNavBar < ApplicationRecord
+end

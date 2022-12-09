@@ -11,12 +11,12 @@
   </head>
 
   <body>
-    <%= link_to "Home", root_path %>
-    <%= link_to "About", root_path %>
-    <%= link_to "Community", root_path %>
-    <%= link_to "Contact", root_path %>
-    <%= link_to "Features", root_path %>
-    <%= link_to "Login/Sing Up", root_path %>
+    <%= link_to "Home", functional_nav_bar_home_path %>
+    <%= link_to "About", functional_nav_bar_about_path %>
+    <%= link_to "Community", functional_nav_bar_community_path %>
+    <%= link_to "Contact", functional_nav_bar_contact_path %>
+    <%= link_to "Features", functional_nav_bar_features_path %>
+    <%= link_to "Login/Sing Up", functional_nav_bar_login_signup_path %>
 
     <%= yield %>
   </body>

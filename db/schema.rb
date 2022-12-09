@@ -10,7 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_12_09_074812) do
+ActiveRecord::Schema[7.0].define(version: 2022_12_09_092958) do
+  create_table "functional_nav_bars", force: :cascade do |t|
+    t.string "home"
+    t.string "about"
+    t.string "community"
+    t.string "contact"
+    t.string "features"
+    t.string "login_sigup"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "invoices", force: :cascade do |t|
     t.datetime "date"
     t.string "company"

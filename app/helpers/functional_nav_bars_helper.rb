@@ -1,0 +1,2 @@
+module FunctionalNavBarsHelper
+end
