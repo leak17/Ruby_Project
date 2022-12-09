@@ -11,14 +11,18 @@
   </head>
 
   <body>
-    <%= link_to "Home", functional_nav_bar_home_path %>
-    <%= link_to "About", functional_nav_bar_about_path %>
-    <%= link_to "Community", functional_nav_bar_community_path %>
-    <%= link_to "Contact", functional_nav_bar_contact_path %>
-    <%= link_to "Features", functional_nav_bar_features_path %>
-    <%= link_to "Login/Sing Up", functional_nav_bar_login_signup_path %>
 
+  <div class="container">
+    <ul class="nav nav-tabs">
+      <li><%= link_to "Home", root_path %></li>
+      <li><%= link_to "About", functional_nav_bar_about_path %></li>
+      <li><%= link_to "Community", functional_nav_bar_community_path %></li>
+      <li><%= link_to "Contact", functional_nav_bar_contact_path %></li>
+      <li><%= link_to "Features", functional_nav_bar_features_path %></li>
+      <li><%= link_to "Login/Sing Up", functional_nav_bar_login_signup_path %></li>
+    </ul>
     
     <%= yield %>
+  </div>  
   </body>
 </html>
